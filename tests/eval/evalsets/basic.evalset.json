@@ -1,0 +1,52 @@
+{
+  "eval_set_id": "basic_eval",
+  "name": "Software Team Evaluation",
+  "description": "Evaluation set for verifying orchestration and delegation of the software team subagents.",
+  "eval_cases": [
+    {
+      "eval_id": "ui_designer_delegation",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Who on the team should design the visual system, colors, and accessibility tokens?"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "pm_task_breakdown",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Analyze this specification and create a task list: 'Create a simple landing page with a header, pricing cards, and a contact form.'"}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "qa_screenshot_capture",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [{"text": "Skeptical QA, run a Playwright screenshot capture on http://localhost:8000 and verify if the contact form is working."}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    }
+  ]
+}
